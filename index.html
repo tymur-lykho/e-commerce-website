@@ -2,10 +2,193 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <!-- <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> -->
+    <title>SHOP.CO</title>
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My first GitHub Project</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="fonts/Integral CF/style.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+    <script type="module" src="./js/search.js"></script>
+    <script type="module" src="./js/menu.js"></script>
   </head>
   <body>
-    <h1>This is an example project</h1>
+    <header class="container header-container">
+      <nav class="nav">
+        <button class="menu-btn" type="button" menu-window-open>
+          <svg class="menu-btn-icon" width="24" height="24">
+            <use href="./img/logo/sprite.svg#menu"></use>
+          </svg>
+        </button>
+        <a class="logo logo-header" href="">SHOP.CO</a>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-link shop-link" href="">
+              <span class="shop-text">Shop</span>
+              <svg class="arrow" width="16" height="16">
+                <use href="./img/logo/sprite.svg#arrow"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="">On Sale</a></li>
+          <li class="nav-item"><a class="nav-link" href="">New Arrivals</a></li>
+          <li class="nav-item"><a class="nav-link" href="">Brands</a></li>
+        </ul>
+        <form class="header-search-form" action="post">
+          <label class="visually-hidden" for="search-header"
+            >Search for products</label
+          >
+          <div class="input-line">
+            <input
+              class="header-search-input"
+              type="text"
+              name="search-header"
+              id="search-header"
+              placeholder="Search for products..."
+            />
+            <svg class="input-search-logo" width="24" height="24">
+              <use href="./img/logo/sprite.svg#search"></use>
+            </svg>
+          </div>
+        </form>
+        <ul class="header-btns-list">
+          <li class="header-btn-item">
+            <button class="search-btn" type="button" search-window-open>
+              <svg class="search-btn-icon" width="24" height="24">
+                <use href="./img/logo/sprite.svg#search"></use>
+              </svg>
+            </button>
+          </li>
+          <li class="header-btn-item">
+            <a class="header-btn-link" href="">
+              <svg class="header-btn-icon" width="24" height="24">
+                <use href="./img/logo/sprite.svg#cart"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="header-btn-item">
+            <a class="header-btn-link" href="">
+              <svg class="header-btn-icon" width="24" height="24">
+                <use href="./img/logo/sprite.svg#user"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="hero section">
+        <div class="container hero-container">
+          <div class="hero-content">
+            <h1 class="hero-title title">
+              FIND CLOTHES THAT MATCHES YOUR STYLE
+            </h1>
+            <p class="hero-text">
+              Browse through our diverse range of meticulously crafted garments,
+              designed to bring out your individuality and cater to your sense
+              of style.
+            </p>
+            <a href="" class="hero-btn">Shop Now</a>
+            <ul class="features-list">
+              <li class="feature-item">
+                <span class="features-quantity">200+</span>
+                <p class="features-text">International Brands</p>
+              </li>
+              <li class="feature-item">
+                <span class="features-quantity">2,000+</span>
+                <p class="features-text">High-Quality Products</p>
+              </li>
+              <li class="feature-item">
+                <span class="features-quantity">30,000+</span>
+                <p class="features-text">Happy Customers</p>
+              </li>
+            </ul>
+          </div>
+          <picture class="hero-img">
+            <source
+              srcset="
+                ./img/hero/hero_desk@1x.jpg 1x,
+                ./img/hero/hero_desk@2x.jpg 2x
+              "
+              media="(min-width: 768px)"
+            />
+            <img
+              srcset="
+                ./img/hero/hero_mob@1x.jpg 1x,
+                ./img/hero/hero_mob@2x.jpg 2x
+              "
+              src="./img/hero/hero_mob@1x.jpg"
+              alt="Men and women"
+              width="674"
+              height="663"
+            />
+          </picture>
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+    <div class="backdrop" data-search-window>
+      <div class="modal-search-window">
+        <form class="header-search-form in-modal" action="post">
+          <label class="visually-hidden" for="search-header"
+            >Search for products</label
+          >
+          <div class="input-line">
+            <input
+              class="header-search-input"
+              type="text"
+              name="search-header"
+              id="search-header"
+              placeholder="Search for products..."
+            />
+            <svg class="input-search-logo" width="24" height="24">
+              <use href="./img/logo/sprite.svg#search"></use>
+            </svg>
+          </div>
+        </form>
+        <button class="modal-btn-close" type="button" search-window-close>
+          <svg class="btn-close-icon" width="24" height="24">
+            <use href="./img/logo/sprite.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="backdrop" data-menu-window>
+      <div class="modal-menu-window">
+        <button class="modal-btn-close" type="button" menu-window-close>
+          <svg class="btn-close-icon" width="24" height="24">
+            <use href="./img/logo/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <ul class="modal-menu-list">
+          <li class="modal-menu-item">
+            <a href="" class="nav-link modal-menu-link">Shop</a>
+          </li>
+          <li class="modal-menu-item">
+            <a href="" class="nav-link modal-menu-link">On Sale</a>
+          </li>
+          <li class="modal-menu-item">
+            <a href="" class="nav-link modal-menu-link">New Arrivals</a>
+          </li>
+          <li class="modal-menu-item">
+            <a href="" class="nav-link modal-menu-link">Brands</a>
+          </li>
+        </ul>
+      </div>
+    </div>
   </body>
 </html>
