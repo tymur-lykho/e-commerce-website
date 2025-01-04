@@ -27,7 +27,7 @@ body {
 }
 .container {
   min-width: 320px;
-  max-width: 390px;
+  max-width: 425px;
   margin: 0 auto;
   padding: 0 16px;
 }
@@ -567,20 +567,26 @@ address {
   border: 1px solid rgba(0, 0, 0, 0.1);
   width: calc(100% - clamp(1rem, 7.5vw - 0.5rem, 6.25rem) * 2);
 }
-.arrivals-container {
+@media only screen and (max-width: 1024px) {
+  .arrivals-container {
+    padding: 0;
+  }
 }
 .arrivals-title {
   margin-bottom: clamp(2rem, 2.054vw + 1.589rem, 3.438rem);
 }
+.arrivals .cards-list {
+  margin-bottom: clamp(1.5rem, 1.071vw + 1.286rem, 2.25rem);
+}
 .view-all-btn {
-  margin-top: clamp(21.188rem, 14.286vw + 18.33rem, 31.188rem);
   font-size: clamp(0.875rem, 0.8393rem + 0.1786vw, 1rem);
   font-weight: 500;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 62px;
   text-align: center;
   display: block;
-  width: 100%;
+  margin: 0 auto;
+  width: calc(100% - 32px);
   padding: 16px 0;
 }
 @media only screen and (min-width: 768px) {
@@ -598,22 +604,17 @@ address {
 /* #endregion */
 
 /* #region CARDS */
-.card-list-wrapper {
-  position: relative;
-}
-
 .cards-list {
-  position: absolute;
-  max-width: calc(100% - 16px);
+  position: relative;
   display: flex;
   gap: clamp(1rem, 0.9286rem + 0.3571vw, 1.25rem);
   overflow-x: auto;
   scroll-snap-type: x mandatory;
+  padding: 0 16px;
 }
 @media only screen and (min-width: 1024px) {
   .cards-list {
     position: static;
-    max-width: 100%;
     margin-bottom: 36px;
   }
 }
@@ -622,7 +623,7 @@ address {
 }
 .card-item {
   min-width: 198px;
-  scroll-snap-align: start;
+  scroll-snap-align: center;
 }
 .card-link {
 }
@@ -688,7 +689,10 @@ address {
   padding-top: clamp(2.5rem, 2.143vw + 2.071rem, 4rem);
   padding-bottom: clamp(3.125rem, 2.679vw + 2.589rem, 5rem);
 }
-.top-selling-container {
+@media only screen and (max-width: 1024px) {
+  .top-selling-container {
+    padding: 0;
+  }
 }
 .top-selling-title {
   margin-bottom: clamp(2rem, 2.054vw + 1.589rem, 3.438rem);
