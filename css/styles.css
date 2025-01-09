@@ -246,7 +246,7 @@ address {
   padding-bottom: clamp(22.875rem, 106.667vw + 1.542rem, 29.875rem);
 
   background-color: #f2f0f1;
-  background-image: url(/img/hero/hero_mob@1x.jpg);
+  background-image: url(../img/hero/hero_mob@1x.jpg);
   background-repeat: no-repeat;
   background-size: contain;
   background-position: bottom;
@@ -255,7 +255,7 @@ address {
   .hero {
     padding-top: 16px;
     padding-bottom: 16px;
-    background-image: url(/img/hero/hero_desk@1x.jpg);
+    background-image: url(../img/hero/hero_desk@1x.jpg);
     background-position: center;
     background-size: cover;
     background-position-x: -285px;
@@ -268,7 +268,7 @@ address {
     padding-bottom: 116px;
     background-position-x: -246px;
 
-    background-image: url(/img/hero/hero_desk@1x.jpg);
+    background-image: url(../img/hero/hero_desk@1x.jpg);
   }
 }
 @media only screen and (min-width: 1440px) {
@@ -285,7 +285,7 @@ address {
   display: block;
   width: 44px;
   height: 44px;
-  background-image: url(/img/icons/star-4.svg);
+  background-image: url(../img/icons/star-4.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -319,7 +319,7 @@ address {
   display: block;
   width: 76px;
   height: 76px;
-  background-image: url(/img/icons/star-4.svg);
+  background-image: url(../img/icons/star-4.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
