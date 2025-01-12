@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" /> -->
+    <title>SHOP.CO</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/3.0.1/modern-normalize.min.css"
+      integrity="sha512-q6WgHqiHlKyOqslT/lgBgodhd03Wp4BEqKeW6nNtlOY4quzyG3VoQKFrieaCeSnuVseNKRGpGeDU3qPmabCANg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      href="https://api.fontshare.com/v2/css?f[]=satoshi@400,500,700&display=swap"
+      rel="stylesheet"
+    />
+    <link href="fonts/Integral CF/style.css" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="./css/styles.css" />
+    <link rel="stylesheet" href="./css/product-styles.css" />
+    <script type="module" src="./js/search.js"></script>
+    <script type="module" src="./js/menu.js"></script>
+  </head>
+  <body>
+    <header class="container header-container">
+      <nav class="nav">
+        <button class="menu-btn" type="button" menu-window-open>
+          <svg class="menu-btn-icon" width="24" height="24">
+            <use href="./img/logo/sprite.svg#menu"></use>
+          </svg>
+        </button>
+        <a class="logo logo-header" href="">SHOP.CO</a>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-link shop-link" href="">
+              <span class="shop-text">Shop</span>
+              <svg class="arrow" width="16" height="16">
+                <use href="./img/logo/sprite.svg#arrow"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="nav-item"><a class="nav-link" href="">On Sale</a></li>
+          <li class="nav-item"><a class="nav-link" href="">New Arrivals</a></li>
+          <li class="nav-item"><a class="nav-link" href="">Brands</a></li>
+        </ul>
+        <form class="header-search-form" action="post">
+          <label class="visually-hidden" for="search-header"
+            >Search for products</label
+          >
+          <div class="input-line">
+            <input
+              class="header-search-input"
+              type="text"
+              name="search-header"
+              id="search-header"
+              placeholder="Search for products..."
+            />
+            <svg class="input-search-logo" width="24" height="24">
+              <use href="./img/logo/sprite.svg#search"></use>
+            </svg>
+          </div>
+        </form>
+        <ul class="header-btns-list">
+          <li class="header-btn-item">
+            <button class="search-btn" type="button" search-window-open>
+              <svg class="search-btn-icon" width="24" height="24">
+                <use href="./img/logo/sprite.svg#search"></use>
+              </svg>
+            </button>
+          </li>
+          <li class="header-btn-item">
+            <a class="header-btn-link" href="">
+              <svg class="header-btn-icon" width="24" height="24">
+                <use href="./img/logo/sprite.svg#cart"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="header-btn-item">
+            <a class="header-btn-link" href="">
+              <svg class="header-btn-icon" width="24" height="24">
+                <use href="./img/logo/sprite.svg#user"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="breadcrumbs">
+        <div class="breadcrumbs-container container">
+          <ul class="breadcrumbs-list">
+            <li class="breadcrumbs-item">
+              <a href="" class="breadcrumbs-link">Home</a>
+            </li>
+            <li class="breadcrumbs-item">
+              <a href="" class="breadcrumbs-link">Shop</a>
+            </li>
+            <li class="breadcrumbs-item">
+              <a href="" class="breadcrumbs-link">Men</a>
+            </li>
+            <li class="breadcrumbs-item">
+              <a href="" class="breadcrumbs-link">T-shirts</a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section class="product-section section">
+        <div class="product-container container">
+          <div class="product-info">
+            <div class="product-photos">
+              <ul class="preview-list">
+                <li class="preview-item">
+                  <button class="preview-item-btn" type="button"></button>
+                </li>
+                <li class="preview-item">
+                  <button class="preview-item-btn" type="button"></button>
+                </li>
+                <li class="preview-item">
+                  <button class="preview-item-btn" type="button"></button>
+                </li>
+              </ul>
+              <div class="product-big-photo"></div>
+            </div>
+            <div class="product-details">
+              <h1 class="product-title">One Life Graphic T-shirt</h1>
+              <div class="card-grade">
+                <span class="card-star"></span>
+                <p class="card-points">4.5</p>
+              </div>
+              <div class="card-price-wrapper">
+                <p class="card-price">$120</p>
+                <span class="card-sale">
+                  <p class="card-sale-price">$300</p>
+                  <span class="card-sale-discount">-40%</span>
+                </span>
+              </div>
+              <p class="product-text">
+                This graphic t-shirt which is perfect for any occasion. Crafted
+                from a soft and breathable fabric, it offers superior comfort
+                and style.
+              </p>
+              <p class="product-color">Select Colors</p>
+              <ul class="color-list">
+                <li class="color-item">
+                  <button
+                    type="button"
+                    class="color-btn"
+                    data-color="olive"
+                    aria-label="Olive color"
+                  ></button>
+                </li>
+                <li class="color-item">
+                  <button
+                    type="button"
+                    class="color-btn"
+                    data-color="green"
+                    aria-label="Green color"
+                  ></button>
+                </li>
+                <li class="color-item">
+                  <button
+                    type="button"
+                    class="color-btn"
+                    data-color="navy"
+                    aria-label="Navy color"
+                  ></button>
+                </li>
+              </ul>
+              <p class="product-size">Choose Size</p>
+              <ul class="size-list">
+                <li class="size-item">
+                  <button
+                    type="button"
+                    class="size-btn"
+                    data-size="S"
+                    aria-label="Small size"
+                  >
+                    Small
+                  </button>
+                </li>
+                <li class="size-item">
+                  <button
+                    type="button"
+                    class="size-btn"
+                    data-size="M"
+                    aria-label="Medium size"
+                  >
+                    Medium
+                  </button>
+                </li>
+                <li class="size-item">
+                  <button
+                    type="button"
+                    class="size-btn"
+                    data-size="L"
+                    aria-label="Large size"
+                  >
+                    Large
+                  </button>
+                </li>
+                <li class="size-item">
+                  <button
+                    type="button"
+                    class="size-btn"
+                    data-size="XL"
+                    aria-label="Extra large size"
+                  >
+                    X-Large
+                  </button>
+                </li>
+              </ul>
+              <div class="product-details-footer">
+                <div class="quantity-controls">
+                  <button class="quantity-decrease">
+                    <svg width="20" height="20">
+                      <use href="./img/logo/sprite.svg#minus"></use>
+                    </svg>
+                  </button>
+                  <input type="number" id="quantity" value="1" min="1" />
+                  <button class="quantity-increase">
+                    <svg width="20" height="20">
+                      <use href="./img/logo/sprite.svg#plus"></use>
+                    </svg>
+                  </button>
+                </div>
+                <button class="add-to-cart-btn">Add to Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <secrion class="subscribe">
+        <div class="subscribe-container container">
+          <div class="subscribe-wrapper">
+            <h2 class="subscribe-title title">
+              STAY UPTO DATE ABOUT OUR LATEST OFFERS
+            </h2>
+            <form action="post" class="subscribe-form">
+              <label
+                class="subscribe-form-label visually-hidden"
+                for="user-email"
+                >Enter your email address</label
+              >
+              <div class="input-wrap">
+                <svg class="input-icon" width="20" height="20">
+                  <use href="./img/logo/sprite.svg#email"></use>
+                </svg>
+                <input
+                  class="subscribe-form-input"
+                  type="email"
+                  name="user-email"
+                  id="user-email"
+                  placeholder="Enter your email address"
+                />
+              </div>
+              <button class="subscribe-form-btn" type="submit">
+                Subscribe to Newsletter
+              </button>
+            </form>
+          </div>
+        </div>
+      </secrion>
+    </main>
+    <footer class="footer">
+      <div class="footer-container container">
+        <div class="footer-wrapper">
+          <div class="footer-wrapper-text">
+            <a class="logo logo-footer" href="">SHOP.CO</a>
+            <h2 class="footer-text">
+              We have clothes that suits your style and which you’re proud to
+              wear. From women to men.
+            </h2>
+            <ul class="socials-list">
+              <li class="social-item">
+                <a href="" class="social-link">
+                  <svg class="social-icon" width="28" height="28">
+                    <use href="./img/logo/sprite.svg#twiter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a href="" class="social-link">
+                  <svg class="social-icon" width="28" height="28">
+                    <use href="./img/logo/sprite.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a href="" class="social-link">
+                  <svg class="social-icon" width="28" height="28">
+                    <use href="./img/logo/sprite.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="social-item">
+                <a href="" class="social-link">
+                  <svg class="social-icon" width="28" height="28">
+                    <use href="./img/logo/sprite.svg#github"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer-nav-container">
+            <div class="footer-nav-wrapper">
+              <h3 class="footer-title">Company</h3>
+              <ul class="footer-nav-list">
+                <li class="footer-nav-item">
+                  <a href="" class="footer-nav-link">about</a>
+                </li>
+                <li class="footer-nav-item">
+                  <a href="" class="footer-nav-link">features</a>
+                </li>
+                <li class="footer-nav-item">
+                  <a href="" class="footer-nav-link">works</a>
+                </li>
+                <li class="footer-nav-item">
+                  <a href="" class="footer-nav-link">carrer</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-nav-wrapper">
+              <h3 class="footer-title">HELP</h3>
+              <ul class="footer-nav-list">
+                <li class="footer-nav-item">
+                  <a href="" class="footer-nav-link">customer support</a>
+                </li>
+                <li class="footer-nav-item">
+                  <a href="" class="footer-nav-link">delivery details</a>
+                </li>
+                <li class="footer-nav-item">
+                  <a href="" class="footer-nav-link">terms & conditions</a>
+                </li>
+                <li class="footer-nav-item">
+                  <a href="" class="footer-nav-link">privacy policy</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-nav-wrapper">
+              <h3 class="footer-title">FAQ</h3>
+              <ul class="footer-nav-list">
+                <li class="footer-nav-item">
+                  <a href="" class="footer-nav-link">account</a>
+                </li>
+                <li class="footer-nav-item">
+                  <a href="" class="footer-nav-link">manage deliveries</a>
+                </li>
+                <li class="footer-nav-item">
+                  <a href="" class="footer-nav-link">orders</a>
+                </li>
+                <li class="footer-nav-item">
+                  <a href="" class="footer-nav-link">payment</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-nav-wrapper">
+              <h3 class="footer-title">RESOURCES</h3>
+              <ul class="footer-nav-list">
+                <li class="footer-nav-item">
+                  <a href="" class="footer-nav-link">Free eBook</a>
+                </li>
+                <li class="footer-nav-item">
+                  <a href="" class="footer-nav-link">development tutorial</a>
+                </li>
+                <li class="footer-nav-item">
+                  <a href="" class="footer-nav-link">how to - Blog</a>
+                </li>
+                <li class="footer-nav-item">
+                  <a href="" class="footer-nav-link">Youtube Playlist</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-footer-wrapper">
+          <p class="footer-rights-text">
+            Shop.co © 2000-2023, All Rights Reserved
+          </p>
+          <ul class="footer-payment-list">
+            <li class="footer-payment-item">
+              <a href="" class="footer-payment-link">
+                <svg class="footer-payment-icon" width="28" height="9">
+                  <use href="./img/logo/sprite.svg#visa"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-payment-item">
+              <a href="" class="footer-payment-link">
+                <svg class="footer-payment-icon" width="22" height="13">
+                  <use href="./img/logo/sprite.svg#mastercard"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-payment-item">
+              <a href="" class="footer-payment-link">
+                <svg class="footer-payment-icon" width="30" height="8">
+                  <use href="./img/logo/sprite.svg#paypal"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-payment-item">
+              <a href="" class="footer-payment-link">
+                <svg class="footer-payment-icon" width="23" height="10">
+                  <use href="./img/logo/sprite.svg#applepay"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-payment-item">
+              <a href="" class="footer-payment-link">
+                <svg class="footer-payment-icon" width="25" height="10">
+                  <use href="./img/logo/sprite.svg#googlepay"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <div class="backdrop" data-search-window>
+      <div class="modal-search-window">
+        <form class="header-search-form in-modal" action="post">
+          <label class="visually-hidden" for="search-header"
+            >Search for products</label
+          >
+          <div class="input-line">
+            <input
+              class="header-search-input"
+              type="text"
+              name="search-header"
+              id="search-header"
+              placeholder="Search for products..."
+            />
+            <svg class="input-search-logo" width="24" height="24">
+              <use href="./img/logo/sprite.svg#search"></use>
+            </svg>
+          </div>
+        </form>
+        <button class="modal-btn-close" type="button" search-window-close>
+          <svg class="btn-close-icon" width="24" height="24">
+            <use href="./img/logo/sprite.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="backdrop" data-menu-window>
+      <div class="modal-menu-window">
+        <button class="modal-btn-close" type="button" menu-window-close>
+          <svg class="btn-close-icon" width="24" height="24">
+            <use href="./img/logo/sprite.svg#close"></use>
+          </svg>
+        </button>
+        <ul class="modal-menu-list">
+          <li class="modal-menu-item">
+            <a href="" class="nav-link modal-menu-link">Shop</a>
+          </li>
+          <li class="modal-menu-item">
+            <a href="" class="nav-link modal-menu-link">On Sale</a>
+          </li>
+          <li class="modal-menu-item">
+            <a href="" class="nav-link modal-menu-link">New Arrivals</a>
+          </li>
+          <li class="modal-menu-item">
+            <a href="" class="nav-link modal-menu-link">Brands</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="./js/card-scroll.js"></script>
+  </body>
+</html>
