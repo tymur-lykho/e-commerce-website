@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="./css/product-styles.css" />
     <script type="module" src="./js/search.js"></script>
     <script type="module" src="./js/menu.js"></script>
+    <script type="module" src="./js/product-page.js"></script>
   </head>
   <body>
     <header class="container header-container">
@@ -116,13 +117,25 @@
             <div class="product-photos">
               <ul class="preview-list">
                 <li class="preview-item">
-                  <button class="preview-item-btn" type="button"></button>
+                  <button
+                    class="preview-item-btn"
+                    type="button"
+                    data-image="./img/product/image1_desk@1x.jpg"
+                  ></button>
                 </li>
                 <li class="preview-item">
-                  <button class="preview-item-btn" type="button"></button>
+                  <button
+                    class="preview-item-btn"
+                    type="button"
+                    data-image="./img/product/image5_desk@1x.jpg"
+                  ></button>
                 </li>
                 <li class="preview-item">
-                  <button class="preview-item-btn" type="button"></button>
+                  <button
+                    class="preview-item-btn"
+                    type="button"
+                    data-image="./img/product/image6_desk@1x.jpg"
+                  ></button>
                 </li>
               </ul>
               <div class="product-big-photo"></div>
@@ -150,7 +163,7 @@
                 <li class="color-item">
                   <button
                     type="button"
-                    class="color-btn"
+                    class="color-btn active"
                     data-color="olive"
                     aria-label="Olive color"
                   ></button>
@@ -235,6 +248,66 @@
           </div>
         </div>
       </section>
+      <section class=""></section>
+      <div class="sections-wrapper">
+        <div class="container sections-wrapper-container">
+          <ul class="section-list">
+            <li class="section-item">
+              <button
+                type="button"
+                class="section-btn"
+                data-section="product-details"
+              >
+                Product Details
+              </button>
+            </li>
+            <li class="section-item">
+              <button
+                type="button"
+                class="section-btn active"
+                data-section="product-reviews"
+              >
+                Rating & Reviews
+              </button>
+            </li>
+            <li class="section-item">
+              <button
+                type="button"
+                class="section-btn"
+                data-section="product-faq"
+              >
+                FAQs
+              </button>
+            </li>
+          </ul>
+        </div>
+        <section class="product-reviews">
+          <div class="product-reviews-container container">
+            <div class="product-reviews-header">
+              <h2 class="product-reviews-title">
+                All Reviews <span>(451)</span>
+              </h2>
+              <ul class="product-reviews-btn-list">
+                <li class="product-reviews-btn-item">
+                  <button type="button" class="product-reviews-btn filter">
+                    <svg class="filter-icon" width="20" height="20">
+                      <use href="./img/logo/sprite.svg#filter"></use>
+                    </svg>
+                  </button>
+                </li>
+                <li class="product-reviews-btn-item">
+                  <button
+                    type="button"
+                    class="product-reviews-btn write-review"
+                  >
+                    Write a Review
+                  </button>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+      </div>
       <secrion class="subscribe">
         <div class="subscribe-container container">
           <div class="subscribe-wrapper">
